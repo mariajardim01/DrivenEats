@@ -13,7 +13,41 @@
         <div class="logo">DrivenEats</div>
         <div class="sub-titulo">Sua comida em 6 minutos</div>
     </div>
-    <div class="content"></div>
+    <div class="content">
+        <div class="pratos">
+            <div class="frase">Primeiro, seu prato</div>
+            <div class="opcoes">
+            <div class="exibicao">
+                <div class="prato">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pf_calabresa.png"/>
+                    <div class="titulo">Frango Yin Yang</div>
+                    <div class="descricao">Um pouco de batata, um pouco de salada</div>
+                    <div class="preco">14.90</div>
+                
+                </div>
+            </div>   
+            <div class="exibicao">
+                <div class="prato">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pf_calabresa.png"/>
+                    <div class="titulo">Frango Yin Yang</div>
+                    <div class="descricao">Um pouco de batata, um pouco de salada</div>
+                    <div class="preco">14.90</div>
+                
+                </div>
+            </div>   
+            <div class="exibicao">
+                <div class="prato">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pf_calabresa.png"/>
+                    <div class="titulo">Frango Yin Yang</div>
+                    <div class="descricao">Um pouco de batata, um pouco de salada</div>
+                    <div class="preco">14.90</div>
+                
+                </div>
+            </div>    
+            </div>
+            
+        </div>
+    </div>
     <div class="bottom"></div>
     
 </body>
@@ -39,6 +73,7 @@
         position: fixed;
         top: 0;
         padding-left: 21px ;
+        box-shadow: 0px 5px 5px rgb(167, 135, 135);
     }
     .bottom {
         background-color: #FFFFFF;
@@ -48,6 +83,7 @@
         bottom: 0;
     }
     .content {
+        height: calc(100vh - 184px);
        
 
     }
@@ -65,6 +101,60 @@
         font-weight: 400;
         font-size: 18px;
         color: #FFFFFF;
+    }
+    .frase {
+        padding-top: 31px;
+        font-family: "Righteous", serif;
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .exibicao {
+        position: relative;
+        height: 216px;
+        width: 172px;
+        background-color: #FFFFFF;
+        border-radius: 9px;
+        margin-left: 19px;
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+       height: 87px;
+       width: 144px;
+       border-radius: 4px; 
+       margin-top: 19px;
+       margin-left: 14px;
+
+    }
+    .titulo {
+        font-size: 16px;
+        font-weight: 700;
+        font-family: "Roboto", serif;
+        margin-top: 5px;
+    }
+    .descricao {
+        font-family: "Roboto", serif;
+        font-weight: 300;
+        font-size: 15px;
+        color: #A6A6A6;
+        margin-top: 4px;
+    }
+    .preco {
+        position:absolute;
+        bottom: 5px;
+        left: 5px;
+        margin-top: 4px;
+        font-family: "Roboto", serif;
+        font-weight: 400;
+        font-size: 16px;
+
+    }
+    .opcoes {
+        display: flex;
+        overflow:scroll;
+        margin-top: 17px ;
     }
     
     </style>
