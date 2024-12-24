@@ -8,7 +8,7 @@
     <title>Driven Eats</title>
 </head>
 <body>
-
+    <div class="fundoTela"></div>
     <div class="topo">
         <div class="logo">DrivenEats</div>
         <div class="sub-titulo">Sua comida em 6 minutos</div>
@@ -17,28 +17,28 @@
         <div class="pratos">
             <div class="frase">Primeiro, seu prato</div>
             <div class="opcoes">
-            <div class="exibicao">
+            <div class="exibicao prato" onclick="selecionarPrato(this)">
                 <div class="prato">
-                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pf_calabresa.png"/>
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pf_frango.jpg"/>
                     <div class="titulo">Frango Yin Yang</div>
                     <div class="descricao">Um pouco de batata, um pouco de salada</div>
-                    <div class="preco">14.90</div>
+                    <div class="preco">18.90</div>
                 
                 </div>
             </div>   
-            <div class="exibicao">
+            <div class="exibicao prato" onclick="selecionarPrato(this)">
                 <div class="prato">
-                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pf_calabresa.png"/>
-                    <div class="titulo">Frango Yin Yang</div>
-                    <div class="descricao">Um pouco de batata, um pouco de salada</div>
-                    <div class="preco">14.90</div>
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pf_carne.jpg"/>
+                    <div class="titulo">Bife a milanesa</div>
+                    <div class="descricao">Um pouco de salada, um ovo e batata</div>
+                    <div class="preco">20.90</div>
                 
                 </div>
             </div>   
-            <div class="exibicao">
+            <div class="exibicao prato" onclick="selecionarPrato(this)">
                 <div class="prato">
                     <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pf_calabresa.png"/>
-                    <div class="titulo">Frango Yin Yang</div>
+                    <div class="titulo">Calabresa com cebola</div>
                     <div class="descricao">Um pouco de batata, um pouco de salada</div>
                     <div class="preco">14.90</div>
                 
@@ -47,8 +47,96 @@
             </div>
             
         </div>
+
+        <div class="pratos">
+            <div class="frase">Segundo, sua bebida</div>
+            <div class="opcoes">
+            <div class="exibicao bebida" onclick="selecionarBebida(this)">
+                <div class="prato">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pf_calabresa.png"/>
+                    <div class="titulo">Coca-Cola</div>
+                    <div class="descricao">Coquinha gelada</div>
+                    <div class="preco">6.90</div>
+                
+                </div>
+            </div>   
+            <div class="exibicao bebida " onclick="selecionarBebida(this)">
+                <div class="prato">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/fanta.png"/>
+                    <div class="titulo">Fanta</div>
+                    <div class="descricao">Fantaa gelada</div>
+                    <div class="preco">5.90</div>
+                
+                </div>
+            </div>   
+            <div class="exibicao bebida" onclick="selecionarBebida(this)">
+                <div class="prato">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/suco.png"/>
+                    <div class="titulo">Suco</div>
+                    <div class="descricao">Suco natural</div>
+                    <div class="preco">7.90</div>
+                
+                </div>
+            </div>    
+            </div>
+            
+        </div>
+
+        <div class="pratos">
+            <div class="frase">Por último, sua sobrimesa</div>
+            <div class="opcoes">
+            <div class="exibicao sobrimesa" onclick="selecionarSobrimesa(this)">
+                <div class="prato">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/brownie.jpg"/>
+                    <div class="titulo">Brownie</div>
+                    <div class="descricao">Bolinho de chocolate</div>
+                    <div class="preco">9.90</div>
+                
+                </div>
+            </div>   
+            <div class="exibicao sobrimesa" onclick="selecionarSobrimesa(this)">
+                <div class="prato">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/mouse.jpg"/>
+                    <div class="titulo">Mouse</div>
+                    <div class="descricao">Mouse de maracuja</div>
+                    <div class="preco">11.90</div>
+                
+                </div>
+            </div>   
+            <div class="exibicao sobrimesa" onclick="selecionarSobrimesa(this)" >
+                <div class="prato">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pudim.jpg"/>
+                    <div class="titulo">Pudim</div>
+                    <div class="descricao">Pudim sem furinho</div>
+                    <div class="preco">14.90</div>
+                
+                </div>
+            </div>    
+            </div>
+            
+        </div>
     </div>
-    <div class="bottom"></div>
+    
+    <div class="bottom" >
+        <button class="botao" onclick="fazerPedido(this)">Selecione os 3 itens para fechar o pedido</button>
+    </div>
+
+    <div class="pedido">
+        <div class="text1">Confirme seu pedido</div>
+        <div class="prat text2"> Prato </div>
+        <div class="beb text2"> Bebida </div>
+        <div class="sob text2">Sobremesa </div>
+        <div class="total text1">Total:27.70</div>
+        <a class="text1 pedir" href="https://wa.me/61996406316">Tudo certo, pode pedir!</a>
+        <button class="text1 cancelar" onclick="cancelar()">Cancelar</button>
+    </div>
+
+    
+   
+
+    <script src="script.js"></script>
+    
+   
     
 </body>
 
@@ -64,6 +152,7 @@
     body{
          margin-top: 92px;
         background-color: #EEEEEE;
+        margin-bottom: 92px;
         
     }
     .topo {
@@ -74,6 +163,7 @@
         top: 0;
         padding-left: 21px ;
         box-shadow: 0px 5px 5px rgb(167, 135, 135);
+        z-index: 1;
     }
     .bottom {
         background-color: #FFFFFF;
@@ -81,10 +171,14 @@
         width: 100vw;
         position: fixed;
         bottom: 0;
+        align-content: center;
+        text-align: center;
+      
     }
     .content {
-        height: calc(100vh - 184px);
-       
+
+        
+      
 
     }
 
@@ -118,6 +212,7 @@
         margin-left: 19px;
         align-items: center;
         text-align: center;
+        
     }
 
     img {
@@ -156,5 +251,95 @@
         overflow:scroll;
         margin-top: 17px ;
     }
+    .botao{
+        width: 364px;
+        height: 61px;
+        padding-left:80px;
+        padding-right: 80px;
+        border-radius: 50px;
+        background-color: #CBCBCB;
+        color: white;
+        text-align: center;
+        border: none;
+        font-family: "Roboto", serif;
+        font-size: 20px;
+    }
+
+    .pronto {
+        background-color: #32B72F;
+
+    }
+
+    .selecionado {
+        border: #32B72F 5px solid;
+    }
+
+    .pedido {
+        background-color: #50D074;
+        position: fixed;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        width: 377px;
+        height: 353px;
+        border-radius: 9px;
+        display: none;
+        z-index: 3;
+        padding: 20px;
+        text-align: center;
+        justify-content: space-around;
+
+    }
+
+    .fundoTela{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        z-index: 2;
+        display: none;
+
+        background-color: #d0cecea1;
+      
+    }
+
+    .mostrar {
+        display: flex;
+        flex-direction: column;
+    }
+    .text1{
+        font-family: "Roboto", serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+    }
+    .text2 {
+        font-family: "Roboto", serif;
+        font-size: 22px;
+        font-weight: 400;
+        color: white;
+
+    }
+    .pedir {
+        background-color: white;
+        color: #50D074;
+        height: 52px;
+        width: 329px;
+        border-radius: 100px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .cancelar {
+        background-color: #50D074;
+        border: none;
+        font-size: 20px;
+    }
+    .naoMostrar{
+        display: none;
+    }
     
+
     </style>
